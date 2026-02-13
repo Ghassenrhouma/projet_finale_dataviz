@@ -203,13 +203,3 @@ if uploaded_file is not None:
 else:
     # Landing state
     st.info("👆 Upload a CSV or Excel file to get started!")
-    
-    # Example dataset
-    st.markdown("### 📚 Don't have a dataset?")   
-    st.markdown("Try one of these sample datasets:")
-    st.markdown("- [Iris Dataset](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv)")
-    st.markdown("- [Tips Dataset](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv)")
-    st.markdown("- [Titanic Dataset](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/titanic.csv)")
-
-st.markdown("---")
-st.markdown("Built with ❤️ using Streamlit and Google Gemini API | Following visualization best practices (Tufte, Few, Cleveland)")

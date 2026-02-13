@@ -1,3 +1,15 @@
+---
+title: Intelligent Data Visualization App
+emoji: 📊
+colorFrom: blue
+colorTo: purple
+sdk: streamlit
+sdk_version: "1.28.0"
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # 🎨 Intelligent Data Visualization App
 
 An intelligent web application that uses Large Language Models (LLMs) to automatically recommend and generate data visualizations from user-provided datasets and business questions.
@@ -20,11 +32,20 @@ This project leverages Google's Gemini API with a **multi-step scaffolding appro
 
 ## 🔄 User Flow
 
-1. **Upload** a CSV dataset
+1. **Upload** a CSV or Excel dataset
 2. **Ask** a business question (e.g., "What factors influence housing prices?")
 3. **Review** 3 AI-generated visualization proposals with justifications
 4. **Select** your preferred visualization
 5. **Download** the chart as a PNG file
+
+## 🔑 API Key Requirement
+
+This application requires a **Google Gemini API key** to function.
+
+- **For Local Use**: Create a `.env` file with `GEMINI_API_KEY=your_key_here`
+- **For Hugging Face Spaces**: Set the `GEMINI_API_KEY` secret in your Space settings
+
+Get your free API key at: [Google AI Studio](https://makersuite.google.com/app/apikey)
 
 ## 🏗️ Architecture
 
